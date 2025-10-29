@@ -1,0 +1,24 @@
+{
+  "name": "csa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magdalenaRebic/CSA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magdalenaRebic/CSA/issues"
+  },
+  "homepage": "https://github.com/magdalenaRebic/CSA#readme",
+  "description": "",
+  "devDependencies": {
+    "@faker-js/faker": "^10.1.0",
+    "cypress": "^15.5.0"
+  }
+}
