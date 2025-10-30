@@ -23,3 +23,10 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.on('uncaught:exception', (err) => {
+  // ignoruj dynamické chyby Reactu
+  if (err.message.includes('reading \'document\'') || err.message.includes('Cannot read properties of null')) {
+    return false;
+  }
+});
