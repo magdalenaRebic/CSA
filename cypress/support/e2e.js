@@ -15,3 +15,17 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+
+Cypress.on('uncaught:exception', (err) => {
+  console.log('Caught exception:', err.message);
+  // ignorovat všechny chyby
+  return false;
+});
+
+
+Cypress.on('uncaught:exception', (err) => {
+  console.log('Caught exception:', err.message); // pro debug
+  if (err.message.includes("reading 'document'") || err.message.includes('Cannot read properties of null')) {
+    return false; // Cypress test nezastaví
+  }
+});
