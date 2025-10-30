@@ -1,3 +1,5 @@
+# Tento dokument jsem vytvořila s využitím AI.
+
 # Česká spořitelna – E2E Testy
 
 ## Úvod
